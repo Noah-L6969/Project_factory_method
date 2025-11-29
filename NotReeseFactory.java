@@ -8,6 +8,12 @@ public class NotReeseFactory implements ChocolateFactory
         return new NotReeses();
     }
 
+    @Override
+    public Wrapper createWrapper()
+    {
+        System.out.println("Selecting Reese's style wrapper...");
+        return new ReeseWrapper();
+    }
  
     
 }

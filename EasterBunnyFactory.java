@@ -8,6 +8,12 @@ public class EasterBunnyFactory implements ChocolateFactory
         return new EasterBunny();
     }
 
+    @Override
+    public Wrapper createWrapper()
+    {
+        System.out.println("Selecting bunny-themed wrapper...");
+        return new BunnyWrapper();
+    }
    
      
 }
